@@ -1,0 +1,143 @@
+@charset 'UTF-8';
+/**
+ * 
+ * @authors Leeyg (2452563196@qq.com)
+ * @date    2015-06-01 16:13:52
+ * @version $Id-1.0$
+ */
+
+/* body common style */
+html, body, div, dt, dd, dl, form, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, h1, h2, h3, h4, h5, h6{
+    display: block;
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+    font: 100%/1.3333 NexusSerif,Georgia,"Helvetica Neue",NexusSans,Helvetica,Arial,sans-serif;
+    color: #505050;
+    word-break: break-word;
+    background: #fff;
+}
+*, :before, :after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.keyword dt, blockquote, p, pre, td, th {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, ul li, ol li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+dl, ol, ul {
+    line-height: 1.625rem;
+    margin-bottom: 1.25rem;
+    list-style-position: outside;
+    font-family: inherit;
+    font-size: 1.25rem;
+}
+ol, ol li ol, ol li ol li ol, ul, ul li ul, ul li ul li ul {
+    margin-left: 0;
+}
+ol {
+    counter-reset: ol;
+}
+img {
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    display: inline-block;
+    vertical-align: middle;
+}
+canvas, iframe, img, svg, video {
+    max-width: 100%;
+}
+a img {
+    border: none;
+}
+a {
+    line-height: inherit;
+}
+a {
+    transition: all .111s ease-out;
+    background: 0 0;
+    color: #007398;
+    text-decoration: none;
+    word-break: hyphenate;
+}
+a[href] {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.color-fff{color: #fff;}
+.fontsize14{font-size: 14px;}
+/* 浮动样式 */
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+/* 边距以及缩进样式 */
+.text-indent2{
+    text-indent: 2em;
+}
+.mg-t10{
+    margin-top: 10px;
+}
+.mg-t13{
+    margin-top: 13px;
+}
+.pd-t8{
+    padding-top: 8px;
+}
+.pd-t10{
+    padding-top: 10px;
+}
+.pd-bt12{
+    padding-bottom: 12px;
+}
+.pd-rl20{
+    padding: 0 20px;
+}
+/* 边框样式 */
+.border-top{
+    border-top: 1px solid #b0b0b0;
+}
+/*back top style begin*/
+#HQbackArea {
+    display:none;
+    position: fixed;
+}
+
+#HQbackArea {
+    z-index: 9999;
+}
+
+.backArea {
+    width: 70px;
+}
+
+#HQbackArea .backBtn:hover {
+    background-position: 0 -747px;
+}
+
+#HQbackArea .backBtn {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/index.png) -80px -747px no-repeat;
+}
+/*end*/
