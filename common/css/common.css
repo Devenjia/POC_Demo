@@ -1,0 +1,67 @@
+html{
+    height:100%;
+}
+body{
+    height:100%;
+}
+.content{
+    display: flex;
+    height:100%;
+}
+.content .logo{
+    height:4.5vw;
+    background: url("../images/logobg.png");
+}
+.content .logo img{
+    margin-top: 1vw;
+    margin-left: 2vw;
+    float: left;
+}
+.content .logo .logo-text{
+    float: left;
+    margin-top: 0.7vw;
+    margin-left: 0.7vw;
+    color: #eec603;
+    font-weight: bold;
+
+}
+.logo .logo-tex .Customs{
+    margin-top: -0.2vw;
+}
+.menu_list ul>li{
+    font-size: 12px;
+    color: #ddd;
+    line-height:3.3vw;
+    text-align: left;
+}
+.menu_list ul>li a{
+    color: #ddd;
+    margin-left: 2vw;
+}
+.menu_list ul>li:hover{
+    background-color: #0b1828;
+}
+.lf-menu{
+    background-color: #16212d;
+    float: left;
+    width:15.6%;
+
+}
+.rt-Content{
+    float: right;
+    width: 100%;
+    margin-left: -0.2vw;
+    background: url("../images/xhdpi/bg.png");
+}
+.bg-img{
+    height:100%;
+    width:100%;
+}
+.rt-Content img{
+
+}
+.rt-Content .content-detail{
+    position: absolute;
+    left: auto;
+    top: auto;
+}
