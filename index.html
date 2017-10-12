@@ -11,8 +11,8 @@
     <link href="./includes/main.css?version1.0" rel="stylesheet">
     <link rel="stylesheet" href="./common/css/common.css">
     <!--[if lt IE 9]>
-    <script src="./common/js/mainHtml5.js" type="text/javascript"></script>
-    <script src="./common/js/css3-mediaqueries.js" type="text/javascript"></script>
+	    <script src="./common/js/mainHtml5.js" type="text/javascript"></script>
+	    <script src="./common/js/css3-mediaqueries.js" type="text/javascript"></script>
     <![endif]-->
 </head>
 <body>
@@ -42,14 +42,34 @@
             </ul>
         </div>
     </aside>
+    <div class="dislpayArrow hidden-xs">
+    	<a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a>
+    </div>
     <div class="rt-Content">
-        <!--<img class="bg-img" src="./common/images/xhdpi/bg.png" alt="">-->
         <div class="content-detail">
-            <img src="./common/images/new-font.png" alt="">
-            <img src="./common/images/xhdpi/information.png" alt="">
+        	<div class="img-font1">
+            	<img src="./common/images/new-font.png" alt="">
+        	</div>
+        	<div class="img-font2">
+            	<img src="./common/images/xhdpi/information.png" alt="">
+        	</div>
         </div>
     </div>
 </div>
 <script src="./common/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* =======================================================================
+* jQuery.Huisidenav.js 左侧菜单-隐藏显示
+* ======================================================================== */
+function displaynavbar(obj){
+	if($(obj).hasClass("open")){
+		$(obj).removeClass("open");
+		$("body").removeClass("big-page");
+	} else {
+		$(obj).addClass("open");
+		$("body").addClass("big-page");
+	}
+}
+</script>
 </body>
 </html>
