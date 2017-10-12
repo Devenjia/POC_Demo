@@ -8,7 +8,6 @@
     <meta name="description" content="CustomsCMS-DEMO">
     <meta name="keywords" content="CustomsCMS-DEMO">
     <link href="./common/css/global.css?version1.0" rel="stylesheet">
-    <link href="./includes/main.css?version1.0" rel="stylesheet">
     <link rel="stylesheet" href="./common/css/common.css">
     <!--[if lt IE 9]>
 	    <script src="./common/js/mainHtml5.js" type="text/javascript"></script>
@@ -27,25 +26,29 @@
         </div>
         <div class="menu_list">
             <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">资源调度中心</a></li>
-                <li><a href="#">服务网关</a></li>
-                <li><a href="#">服务注册中心</a></li>
-                <li><a href="#">调用链</a></li>
-                <li><a href="#">熔断器</a></li>
-                <li><a href="#">日志管理</a></li>
-                <li><a href="#">资源监控工具</a></li>
-                <li><a href="#">java监控工具</a></li>
-                <li><a href="#">demo</a></li>
-                <li><a href="#">持续集成工具</a></li>
-                <li><a href="#">代码管理工具</a></li>
+                <li class="menu_active"><a href="javascript:;" data-key="1">首页</a></li>
+                <li><a href="javascript:;" data-key="2">资源调度中心</a></li>
+                <li><a href="javascript:;" data-key="3">服务网关</a></li>
+                <li><a href="javascript:;" data-key="4">服务注册中心</a></li>
+                <li><a href="javascript:;" data-key="5">调用链</a></li>
+                <li><a href="javascript:;" data-key="6">熔断器</a></li>
+                <li><a href="javascript:;" data-key="7">日志管理</a></li>
+                <li><a href="javascript:;" data-key="8">资源监控工具</a></li>
+                <li><a href="javascript:;" data-key="9">java监控工具</a></li>
+                <li><a href="javascript:;" data-key="10">demo</a></li>
+                <li><a href="javascript:;" data-key="11">持续集成工具</a></li>
+                <li><a href="javascript:;" data-key="12">代码管理工具</a></li>
             </ul>
         </div>
     </aside>
     <div class="dislpayArrow hidden-xs">
     	<a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a>
     </div>
-    <div class="rt-Content">
+    <div class="rt-content-top">
+    	<iframe id="change-iframe" src="./homepage.html" width="100%" height="100%" frameborder="0"></iframe>
+    	<!-- <iframe src="https://www.baidu.com/" width="100%" height="100%"></iframe> -->
+    </div>
+    <!-- <div class="rt-Content">
         <div class="content-detail">
         	<div class="img-font1">
             	<img src="./common/images/new-font.png" alt="">
@@ -54,10 +57,16 @@
             	<img src="./common/images/xhdpi/information.png" alt="">
         	</div>
         </div>
-    </div>
+    </div> -->
 </div>
 <script src="./common/js/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script type="text/javascript">
+$("li").click(function(evt){
+	$("li").each(function(index, item){
+		$(item).removeClass('menu_active');
+	})
+	$(this).addClass('menu_active');
+})
 /* =======================================================================
 * jQuery.Huisidenav.js 左侧菜单-隐藏显示
 * ======================================================================== */
@@ -70,6 +79,53 @@ function displaynavbar(obj){
 		$("body").addClass("big-page");
 	}
 }
+$(function() {
+	$(".menu_list li>a").click(function(){
+		switch($(this).attr("data-key")){
+			case "1":
+				$("#change-iframe").attr("src","./homepage.html");
+				break;
+			case "2":
+				$("#change-iframe").attr("src","https://www.baidu.com/");
+				break;
+			case "3":
+				$("#change-iframe").attr("src","");
+				break;
+			case "4":
+				$("#change-iframe").attr("src","");
+				break;
+			case "5":
+				$("#change-iframe").attr("src","");
+				break;
+			case "6":
+				$("#change-iframe").attr("src","");
+				break;
+			case "7":
+				$("#change-iframe").attr("src","");
+				break;
+			case "8":
+				$("#change-iframe").attr("src","");
+				break;
+			case "9":
+				$("#change-iframe").attr("src","");
+				break;
+			case "10":
+				$("#change-iframe").attr("src","");
+				break;
+			case "11":
+				$("#change-iframe").attr("src","");
+				break;
+			case "12":
+				$("#change-iframe").attr("src","");
+				break;
+			default:
+				$("#change-iframe").attr("src","./homepage.html");
+				break;
+
+		}
+		//alert($(this).attr("data-key"));
+	});
+});
 </script>
 </body>
 </html>
