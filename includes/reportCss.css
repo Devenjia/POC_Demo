@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-10-12 19:12:47
+ * @version $Id$
+ */
+.lf-menu {
+    background-color: #E2E4E8;
+}
+.content .logo {
+    height: 4.5vw;
+    background: url(../common/images/reportImgs/lf-header-bg.png) no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.rt-content-top{
+	overflow: hidden;
+}
+.rt-report{
+	background: #E2E4E8;
+}
+.rt-header{
+	height: 4.5vw;
+    background: url(../common/images/reportImgs/header-bg.png) no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+h1.rt-title{
+	font-size: 20px;
+	color: #fff;
+	line-height: 3.0;
+	margin-left: 25px;
+	width: 180px;
+	float: left;
+}
+.logoff-box{
+	width: 20px;
+	height: 20px;
+	line-height: 3.8;
+	float: right;
+	margin-right: 20px;
+}
+.table-outer{
+	background: #fff;
+	height: 100%;
+	margin: 25px 120px 25px 25px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    border-left: 0;
+}
+.table th {
+    font-weight: bold;
+}
+.text-c {
+    text-align: center;
+}
+.table-bordered th, .table-bordered td {
+    border-left: 1px solid #ddd;
+}
+.table .text-c th, .table .text-c td {
+    text-align: center;
+}
+.table-border th, .table-border td {
+    border-bottom: 1px solid #ddd;
+}
+.table th, .table td {
+    padding: 8px;
+    line-height: 20px;
+    word-break: break-all;
+}
