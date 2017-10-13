@@ -22,11 +22,11 @@
     <form id="lg-form">
         <div class="username-container">
             <label for="username">用户名:</label>
-            <input type="text" name="username" id="username" placeholder="username"/>
+            <input type="text" name="username" id="username" value="user" placeholder="username"/>
         </div>
         <div>
             <label for="password">密码:</label>
-            <input type="password" name="password" id="password" placeholder="password"/>
+            <input type="password" name="password" id="password" value="password" placeholder="password"/>
         </div>
         <div>
             <button id="login" type="button" onclick="loginModel()">登陆</button>
@@ -37,7 +37,6 @@
 <script src="../common/js/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     function loginModel() {
-        debugger
         window.location.href = "../report/autoreport.html";
     }
 </script>
