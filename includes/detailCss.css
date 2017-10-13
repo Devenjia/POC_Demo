@@ -10,6 +10,9 @@
 	height: 100%;
 	cursor: pointer;
 }
+.rt-content-top .rt-report{
+    position: relative;
+}
 .logo .back-box img{
 	margin-top: 16px;
 	margin-left: 75px;
@@ -75,4 +78,18 @@
 .in-header h5{
     margin: 0;
     padding: 0;
+}
+.btn-box{
+    position: absolute;
+    bottom: -2%;
+    left: 40%;
+}
+.btn-box button{
+    color: #fff;
+    font-size: 12px;
+    /* height: 28px; */
+    border: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #428bca;
 }
