@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Jyz&Lyg (you@example.org)
+ * @date    2017-10-13 15:05:45
+ * @version $Id$
+ */
+.back-box{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.logo .back-box img{
+	margin-top: 16px;
+	margin-left: 75px;
+}
+.box-info{
+	padding-left: 38px;
+}
+.box-info h3{
+	font-size: 14px;
+	color: #5F96D3;
+}
+.box-info h3:before {
+    content: '';
+    display: inline-block;
+    color: #eec603;
+    width: 2px;
+    height: 14px;
+    margin-right: 6px;
+    margin-bottom: -2px;
+    margin-left: -8px;
+    background: #eec603;
+}
+
+#table .single-bgcolor tr>th .th-inner {
+    background-color: #5B89C5;
+}
