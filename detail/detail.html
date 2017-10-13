@@ -72,7 +72,8 @@
                 <table id="table" class="single-bgcolor" data-pagination="true">
                     <thead>
                     <tr>
-                        <th data-field="id">序列号</th>
+                        <th data-field="no">序列号</th>
+                        <th data-field="id">保单号</th>
                         <th data-field="goodCode">代码</th>
                         <th data-field="goodName">商品名称</th>
                         <th data-field="goodQuantity">数量</th>
@@ -105,7 +106,7 @@
             "goodName": "ipad",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -113,7 +114,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -121,7 +122,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -129,7 +130,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -137,7 +138,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -145,7 +146,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -153,7 +154,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -161,7 +162,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -169,7 +170,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -177,7 +178,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -185,7 +186,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -193,7 +194,7 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
@@ -201,9 +202,12 @@
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
+            "goodOrigin": "Japan"
         }
     ];
+    $.each(jsonData,function (index, item) {
+        item.no=index+1;
+    });
 </script>
 </body>
 </html>

@@ -133,3 +133,12 @@ html, body{
 .big-page .dislpayArrow{
     left: 0;
 }
+.red-css{
+    color: red;
+}
+.yellow-css{
+    color: yellow;
+}
+.green-css{
+    color: green;
+}

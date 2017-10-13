@@ -43,19 +43,7 @@
 		        <div class="table-outer">
 					<table id="table" data-pagination="true">
                         <thead>
-                            <tr>
-                                <th data-field="id">序列号</th>
-                                <th data-field="freight">运费</th>
-                                <th data-field="insurance">保费</th>
-                                <th data-field="insurance">杂费</th>
-                                <th data-field="goodName">商品名称</th>
-                                <th data-field="goodQuantity">数量</th>
-                                <th data-field="goodMoney">金额</th>
-                                <th data-field="goodOrigin">产地</th>
-                                <th data-field="status">状态</th>
-                                <th data-field="comment">备注</th>
-                                <th data-field="">详细信息</th>
-                            </tr>
+
                         </thead>
                     </table>
 		        </div>
@@ -85,7 +73,7 @@
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
-                "status": "1",
+                "status": "0",
                 "comment": "AppleX2"
             },
             {
@@ -97,7 +85,7 @@
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
-                "status": "1",
+                "status": "0",
                 "comment": "AppleX3"
             },
             {
@@ -317,6 +305,10 @@
                 "comment": "AppleX3"
             }
         ];
+        $.each(jsonData,function (index, item) {
+            item.no=index+1;
+            item.detail="detail";
+        });
     </script>
 </body>
 </html>
