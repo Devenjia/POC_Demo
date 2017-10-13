@@ -9,20 +9,29 @@
     background-color: #E2E4E8;
 }
 .content .logo {
-    height: 4.5vw;
+    height: 61.47px;
     background: url(../common/images/reportImgs/lf-header-bg.png) no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
     background-position: center;
 }
+.content .logo img {
+    margin-top: 14px;
+    margin-left: 20px;
+}
+.content .logo .logo-text{
+    margin-top: 10px;
+    margin-left: 10px;
+}
 .rt-content-top{
 	overflow: hidden;
 }
 .rt-report{
+    overflow: auto;
 	background: #E2E4E8;
 }
 .rt-header{
-	height: 4.5vw;
+	height: 61.47px;
     background: url(../common/images/reportImgs/header-bg.png) no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -36,7 +45,8 @@ h1.rt-title{
 	font-size: 20px;
 	color: #fff;
     margin: 0;
-    line-height: 3.0;
+    margin-top: 20px;
+    /* line-height: 2.2; */
     margin-left: 25px;
     width: 180px;
     float: left;
@@ -44,15 +54,17 @@ h1.rt-title{
 .logoff-box{
 	width: 20px;
 	height: 20px;
-	line-height: 3.8;
 	float: right;
+    margin-top: 20px;
 	margin-right: 20px;
 }
 .table-outer{
 	background: #fff;
-	height: 100%;
-	margin: 0px 120px 25px 25px;
+	/* height: 100%;
+	margin: 0px 120px 25px 25px; */
+    width: 1036.66px;
     padding-top: 25px;
+    padding-bottom: 45px;
 }
 .table-outer .fixed-table-container{
     width: 980px;

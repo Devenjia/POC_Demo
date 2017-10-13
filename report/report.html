@@ -8,13 +8,18 @@
     <title>人工审核</title>
     <meta name="description" content="人工审核">
     <meta name="keywords" content="人工审核">
-    <link href="../common/css/global.css?version1.0" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-table.css">
     <link rel="stylesheet" href="../common/css/common.css">
-	<link href="../includes/reportCss.css" rel="stylesheet">
-	<!--[if lt IE 9]>
-	    <script src="../common/js/mainHtml5.js" type="text/javascript"></script>
-	    <script src="../common/js/css3-mediaqueries.js" type="text/javascript"></script>
+    <link href="../includes/reportCss.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="../common/js/mainHtml5.js" type="text/javascript"></script>
+        <script src="../common/js/css3-mediaqueries.js" type="text/javascript"></script>
     <![endif]-->
+    <script src="../lib/jquery-3.2.1.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/bootstrap-table.js"></script>
+    <script src="./autoreport.js"></script>
 </head>
 <body>
 	<div class="content">
@@ -26,8 +31,6 @@
 	                <p class="Customs">Customs</p>
 	            </div>
 	        </div>
-	        <div class="menu_list">
-	        </div>
 	    </aside>
 	    <div class="rt-content-top">
 	    	<header class="rt-header">
@@ -38,11 +41,25 @@
 	    	</header>
 		    <div class="rt-Content rt-report">
 		        <div class="table-outer">
-
+					<table id="table" data-pagination="true">
+                        <thead>
+                            <tr>
+                                <th data-field="id">序列号</th>
+                                <th data-field="freight">运费</th>
+                                <th data-field="insurance">保费</th>
+                                <th data-field="insurance">杂费</th>
+                                <th data-field="goodName">商品名称</th>
+                                <th data-field="goodQuantity">数量</th>
+                                <th data-field="goodMoney">金额</th>
+                                <th data-field="goodOrigin">产地</th>
+                                <th data-field="comment">备注</th>
+                                <th data-field="">详细信息</th>
+                            </tr>
+                        </thead>
+                    </table>
 		        </div>
 		    </div>
 	    </div>
 	</div>
-    <script src="../common/js/jquery-1.8.3.min.js" type="text/javascript"></script>
 </body>
 </html>
