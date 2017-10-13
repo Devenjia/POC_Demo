@@ -11,6 +11,8 @@
     <link href="" rel="stylesheet">
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../lib/bootstrap-table.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link href="../includes/reportCss.css" rel="stylesheet">
     <script src="../lib/jquery-3.2.1.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="../lib/bootstrap-table.js"></script>
@@ -18,22 +20,38 @@
 
 </head>
 <body>
-
-<div>
-    <div class="page-header">
-        <h1 id="pagination-table">Pagination Table</h1>
+    <div class="content">
+        <aside class="lf-menu">
+            <div class="logo">
+                <img src="../common/images/ss.png" alt="">
+                <div class="logo-text">
+                    <p>海关平台</p>
+                    <p class="Customs">Customs</p>
+                </div>
+            </div>
+            <div class="menu_list">
+            </div>
+        </aside>
+        <div class="rt-content-top">
+            <header class="rt-header">
+                <h1 class="rt-title">人工审核</h1>
+                <div class="logoff-box">
+                    <img src="../common/images/reportImgs/logofficon.png" alt="" width="20" height="20">
+                </div>
+            </header>
+            <div class="rt-Content rt-report">
+                <div class="table-outer">
+                    <table id="table" data-pagination="true">
+                        <thead>
+                        <tr>
+                            <th data-field="id">Item ID</th>
+                            <th data-field="name">Item Name</th>
+                            <th data-field="price">Item Price</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+        </div>
     </div>
-    <div class="bs-example">
-        <table id="table" data-pagination="true">
-            <thead>
-            <tr>
-                <th data-field="id">Item ID</th>
-                <th data-field="name">Item Name</th>
-                <th data-field="price">Item Price</th>
-            </tr>
-            </thead>
-        </table>
-    </div>
-</div>
 </body>
 </html>
