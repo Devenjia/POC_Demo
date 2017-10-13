@@ -4,39 +4,19 @@
     [
       {
         "id": 10000,
+        "company": "Apple",
         "freight": 100123,
         "insurance": 2000123,
         "otherFee": 0,
-        "goodName": "macbook",
-        "goodQuantity": 100,
-        "goodMoney": 10002,
-        "goodOrigin": "Japan",
-        "status": "2",
-        "comment": "AppleX1"
+        "status": "Starting"
       },
       {
-        "id": 10000,
+        "id": 20000,
+        "company": "Google",
         "freight": 100123,
         "insurance": 2000123,
         "otherFee": 0,
-        "goodName": "ipad",
-        "goodQuantity": 100,
-        "goodMoney": 10002,
-        "goodOrigin": "Japan",
-        "status": "0",
-        "comment": "AppleX2"
-      },
-      {
-        "id": 10000,
-        "freight": 100123,
-        "insurance": 2000123,
-        "otherFee": 0,
-        "goodName": "iphone",
-        "goodQuantity": 100,
-        "goodMoney": 10002,
-        "goodOrigin": "Japan",
-        "status": "1",
-        "comment": "AppleX3"
+        "status": "End"
       }
     ]
   ]

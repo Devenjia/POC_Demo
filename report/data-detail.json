@@ -3,17 +3,34 @@
   "data": [
     {
       "id": 10000,
-      "attachInfo": "something",
+      "company": "Apple",
       "freight": 100123,
       "insurance": 2000123,
       "otherFee": 0,
-      "goodName": "macbook",
-      "goodCode": "01",
-      "goodQuantity": 100,
-      "goodMoney": 10002,
-      "goodOrigin": "Japan",
-      "status": "Starting",
-      "comment": "AppleX1"
+      "goods": [
+        {
+          "goodName": "macbook",
+          "goodCode": null,
+          "goodQuantity": 100,
+          "goodMoney": 100,
+          "goodOrigin": "Japan"
+        },
+        {
+          "goodName": "ipad",
+          "goodCode": null,
+          "goodQuantity": 100,
+          "goodMoney": 200,
+          "goodOrigin": "Japan"
+        },
+        {
+          "goodName": "watch",
+          "goodCode": null,
+          "goodQuantity": 100,
+          "goodMoney": 300,
+          "goodOrigin": "Japan"
+        }
+      ],
+      "status": "Starting"
     }
   ]
 }
