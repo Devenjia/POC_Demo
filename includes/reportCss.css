@@ -5,6 +5,9 @@
  * @date    2017-10-12 19:12:47
  * @version $Id$
  */
+body{
+    min-width: 1200px;
+}
 .lf-menu {
     background-color: #E2E4E8;
 }
