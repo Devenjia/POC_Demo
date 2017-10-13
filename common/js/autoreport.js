@@ -2,7 +2,7 @@ $(function () {
 
     $('#table').bootstrapTable({
         classes: 'table table-hover',
-        striped:true,
+        striped: true,
         data: [
             {
                 "id": 10000,
@@ -13,6 +13,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "2",
                 "comment": "AppleX1"
             },
             {
@@ -24,6 +25,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX2"
             },
             {
@@ -35,6 +37,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX3"
             },
             {
@@ -46,6 +49,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX1"
             },
             {
@@ -57,6 +61,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX2"
             },
             {
@@ -68,6 +73,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX3"
             },
             {
@@ -79,6 +85,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX1"
             },
             {
@@ -90,6 +97,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX2"
             },
             {
@@ -101,6 +109,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX3"
             },
             {
@@ -112,6 +121,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX1"
             },
             {
@@ -123,6 +133,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX2"
             },
             {
@@ -134,6 +145,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX3"
             },
             {
@@ -145,6 +157,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX1"
             },
             {
@@ -156,6 +169,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX2"
             },
             {
@@ -167,6 +181,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX3"
             },
             {
@@ -178,6 +193,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX1"
             },
             {
@@ -189,6 +205,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX2"
             },
             {
@@ -200,6 +217,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX3"
             },
             {
@@ -211,6 +229,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX1"
             },
             {
@@ -222,6 +241,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX2"
             },
             {
@@ -233,6 +253,7 @@ $(function () {
                 "goodQuantity": 100,
                 "goodMoney": 10002,
                 "goodOrigin": "Japan",
+                "status": "1",
                 "comment": "AppleX3"
             }
         ]
