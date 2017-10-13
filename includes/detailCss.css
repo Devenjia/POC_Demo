@@ -33,13 +33,12 @@
     background: #eec603;
 }
 
-#table .single-bgcolor tr>th .th-inner {
+#table tr>th .th-inner {
     background-color: #5B89C5;
 }
 .information{
     background: #fff;
-    width: 89%;
-    padding-top: 5%;
+    width: 100%;
 }
 .detail-information{
     display: flex;

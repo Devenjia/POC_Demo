@@ -73,15 +73,15 @@
                     <thead>
                     <tr>
                         <th data-field="id">序列号</th>
-                        <th data-field="freight">运费</th>
-                        <th data-field="insurance">保费</th>
-                        <th data-field="insurance">杂费</th>
+                        <th data-field="goodCode">代码</th>
                         <th data-field="goodName">商品名称</th>
                         <th data-field="goodQuantity">数量</th>
-                        <th data-field="goodMoney">金额</th>
+                        <th data-field="goodMoney">总价</th>
+                        <th data-field="goodOrigin">原厂地</th>
+                        <!-- <th data-field="goodMoney">金额</th>
                         <th data-field="goodOrigin">产地</th>
                         <th data-field="comment">备注</th>
-                        <th data-field="">详细信息</th>
+                        <th data-field="">详细信息</th> -->
                     </tr>
                     </thead>
                 </table>
@@ -93,255 +93,115 @@
     var jsonData = [
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "macbook",
             "goodQuantity": 100,
             "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "2",
-            "comment": "AppleX1"
+            "goodOrigin": "Japan"
         },
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "ipad",
             "goodQuantity": 100,
             "goodMoney": 10002,
             "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX2"
         },
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
             "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX3"
         },
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "macbook",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX1"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "ipad",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX2"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
             "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX3"
         },
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "macbook",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX1"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "ipad",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX2"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
             "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX3"
         },
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "macbook",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX1"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "ipad",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX2"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
             "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX3"
         },
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "macbook",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX1"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "ipad",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX2"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
             "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX3"
         },
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "macbook",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX1"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "ipad",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX2"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
             "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX3"
         },
         {
             "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "macbook",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX1"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
-            "goodName": "ipad",
-            "goodQuantity": 100,
-            "goodMoney": 10002,
-            "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX2"
-        },
-        {
-            "id": 10000,
-            "freight": 100123,
-            "insurance": 2000123,
-            "otherFee": 0,
+            "goodCode": 2000123,
             "goodName": "iphone",
             "goodQuantity": 100,
             "goodMoney": 10002,
             "goodOrigin": "Japan",
-            "status": "1",
-            "comment": "AppleX3"
+        },
+        {
+            "id": 10000,
+            "goodCode": 2000123,
+            "goodName": "iphone",
+            "goodQuantity": 100,
+            "goodMoney": 10002,
+            "goodOrigin": "Japan",
+        },
+        {
+            "id": 10000,
+            "goodCode": 2000123,
+            "goodName": "iphone",
+            "goodQuantity": 100,
+            "goodMoney": 10002,
+            "goodOrigin": "Japan",
+        },
+        {
+            "id": 10000,
+            "goodCode": 2000123,
+            "goodName": "iphone",
+            "goodQuantity": 100,
+            "goodMoney": 10002,
+            "goodOrigin": "Japan",
+        },
+        {
+            "id": 10000,
+            "goodCode": 2000123,
+            "goodName": "iphone",
+            "goodQuantity": 100,
+            "goodMoney": 10002,
+            "goodOrigin": "Japan",
+        },
+        {
+            "id": 10000,
+            "goodCode": 2000123,
+            "goodName": "iphone",
+            "goodQuantity": 100,
+            "goodMoney": 10002,
+            "goodOrigin": "Japan",
         }
     ];
 </script>
