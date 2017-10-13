@@ -4,7 +4,9 @@
  * @date    2017-10-13 14:57:33
  * @version $Id$
  */
+var jsonData;
 $(function () {
+	readDB();
     $('#table').bootstrapTable({
         classes: 'table table-hover',
         striped: true,
@@ -38,13 +40,16 @@ $(function () {
                 title: '状态',//标题
                 formatter : function (value, row, index) {
 
-                    if(value==="0"){
-                        return '<span class="red-css">'+'未开始'+'</span>';
-                    }
                     if(value==="1"){
-                        return '<span class="yellow-css">'+'审核中'+'</span>';
+                        return '<span>'+'待审核'+'</span>';
                     }
                     if(value==="2"){
+                        return '<span class="yellow-css">'+'电子审'+'</span>';
+                    }
+                    if(value==="3"){
+                        return '<span class="red-css">'+'人工审'+'</span>';
+                    }
+                    if(value==="4"){
                         return '<span class="green-css">'+'放行'+'</span>';
                     }
                 }
@@ -59,7 +64,7 @@ $(function () {
                     // if (row['status'] === 0) {
                     //     return '禁用';
                     // }
-                    var link="../detail/detail.html?"+ row['id'];
+                    var link="../detail/detail.html?"+ 'id=' + row['id'];
                     return '<a href='+link+'>'+'detail'+'</a>';
                 }
             }
@@ -67,3 +72,23 @@ $(function () {
         data: jsonData
     });
 });
+function readDB(){
+	$.ajax({
+		url: dbUrl,
+		type: "GET",
+		async: false,
+		success:function(json){
+			jsonData = JSON.parse(json.data[0]);
+			$.each(jsonData,function (index, item) {
+	            item.no=index+1;
+	            item.detail="detail";
+	        });
+		},
+		error(error){
+			var trs1 = '<tr>' +
+				'<td align="center" colspan="10" style="border-bottom: 1px solid #e5e5e5;">' +
+				'没有数据</td>' + '</tr>';
+			$("tbody").html(trs1);
+		}
+	})
+}

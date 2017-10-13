@@ -26,7 +26,7 @@
 <div class="content">
     <aside class="lf-menu">
         <div class="logo">
-            <div class="back-box" onclick="javascript:alert('click');">
+            <div class="back-box" onclick="navBack()">
                 <img src="../common/images/detailImgs/navback.png" alt="" width="16" height="28">
             </div>
         </div>
@@ -43,11 +43,11 @@
                 <div class="information">
                     <div class="detail-information company">
                         <div class="Grid-cell">企业信息</div>
-                        <div class="Grid-cell-3">红酒有限公司</div>
+                        <div class="Grid-cell-3" id="company">红酒有限公司</div>
                     </div>
                     <div class="detail-information report">
                         <div class="Grid-cell">随付单证信息</div>
-                        <div class="Grid-cell-3">没有其他问题</div>
+                        <div class="Grid-cell-3" id="companyInfo">没有其他问题</div>
                     </div>
                     <div class="detail-information header">
                         <div class="Grid-cell">运费</div>
@@ -57,11 +57,11 @@
                         <div class="Grid-cell">总额</div>
                     </div>
                     <div class="detail-information value">
-                        <div class="Grid-cell">3454</div>
-                        <div class="Grid-cell">3423435</div>
-                        <div class="Grid-cell">3535454</div>
-                        <div class="Grid-cell">35541</div>
-                        <div class="Grid-cell">211545</div>
+                        <div class="Grid-cell" id="freight">3454</div>
+                        <div class="Grid-cell" id="insurance">3423435</div>
+                        <div class="Grid-cell" id="otherFee">3535454</div>
+                        <div class="Grid-cell">***</div>
+                        <div class="Grid-cell">***</div>
                     </div>
                 </div>
 
