@@ -11,6 +11,7 @@
         "goodQuantity": 100,
         "goodMoney": 10002,
         "goodOrigin": "Japan",
+        "status": "2",
         "comment": "AppleX1"
       },
       {
@@ -22,6 +23,7 @@
         "goodQuantity": 100,
         "goodMoney": 10002,
         "goodOrigin": "Japan",
+        "status": "0",
         "comment": "AppleX2"
       },
       {
@@ -33,6 +35,7 @@
         "goodQuantity": 100,
         "goodMoney": 10002,
         "goodOrigin": "Japan",
+        "status": "1",
         "comment": "AppleX3"
       }
     ]
