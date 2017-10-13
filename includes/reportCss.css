@@ -28,13 +28,18 @@
     background-size: 100% 100%;
     background-position: center;
 }
+.logo-text p{
+    margin: 0;
+    padding: 0;
+}
 h1.rt-title{
 	font-size: 20px;
 	color: #fff;
-	line-height: 3.0;
-	margin-left: 25px;
-	width: 180px;
-	float: left;
+    margin: 0;
+    line-height: 3.0;
+    margin-left: 25px;
+    width: 180px;
+    float: left;
 }
 .logoff-box{
 	width: 20px;
@@ -46,31 +51,27 @@ h1.rt-title{
 .table-outer{
 	background: #fff;
 	height: 100%;
-	margin: 25px 120px 25px 25px;
+	margin: 0px 120px 25px 25px;
+    padding-top: 25px;
 }
-
-.table-bordered {
-    border: 1px solid #ddd;
-    border-collapse: separate;
-    border-left: 0;
+.table-outer .fixed-table-container{
+    width: 980px;
+    margin: auto;
+    border-radius: 0;
+    -webkit-border-radius: 0;
 }
-.table th {
-    font-weight: bold;
-}
-.text-c {
+table#table{
+    width: 980px;
+    table-layout:fixed;/*列宽由表格宽度和列宽度设定。*/
+    margin: auto;/*table居中*/
     text-align: center;
 }
-.table-bordered th, .table-bordered td {
-    border-left: 1px solid #ddd;
+#table tr>th .th-inner{
+    color: #fff;
+    background-color: #3C5C80;
+    border-radius: 0;
+    -webkit-border-radius: 0;
 }
-.table .text-c th, .table .text-c td {
+#table th, #table td{
     text-align: center;
-}
-.table-border th, .table-border td {
-    border-bottom: 1px solid #ddd;
-}
-.table th, .table td {
-    padding: 8px;
-    line-height: 20px;
-    word-break: break-all;
 }
