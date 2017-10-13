@@ -36,3 +36,44 @@
 #table .single-bgcolor tr>th .th-inner {
     background-color: #5B89C5;
 }
+.information{
+    background: #fff;
+    width: 89%;
+    padding-top: 5%;
+}
+.detail-information{
+    display: flex;
+    width: 97%;
+    padding-left: 2.7%;
+    background: #fff;
+}
+.value .Grid-cell{
+    background-color: #fff;
+    color: #000;
+}
+.report .Grid-cell-3{
+    background-color: #fff;
+    color: #000;
+}
+
+.Grid-cell{
+    flex: 1;
+    text-align: center;
+    background-color: #3c5c80;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+.Grid-cell-3{
+    flex: 3;
+    text-align: center;
+    background-color: #e9edf7;
+    color: #000000;
+    border: 1px solid #ddd;
+}
+.in-header {
+    background-color: #fff;
+}
+.in-header h5{
+    margin: 0;
+    padding: 0;
+}
