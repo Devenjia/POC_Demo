@@ -42,7 +42,7 @@
         </div>
     </aside>
     <div class="dislpayArrow hidden-xs">
-    	<a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a>
+    	<a class="pngfix display-icon" href="javascript:void(0);" onClick="displaynavbar(this)"></a>
     </div>
     <div class="rt-content-top">
     	<iframe id="change-iframe" src="./homepage.html" width="100%" height="100%" frameborder="0"></iframe>
@@ -74,7 +74,9 @@ function displaynavbar(obj){
 	if($(obj).hasClass("open")){
 		$(obj).removeClass("open");
 		$("body").removeClass("big-page");
+        $(obj).removeClass("extend-menu");
 	} else {
+	    $(obj).addClass("extend-menu");
 		$(obj).addClass("open");
 		$("body").addClass("big-page");
 	}

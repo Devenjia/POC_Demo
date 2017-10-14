@@ -83,7 +83,7 @@ html, body{
     background: url("../images/xhdpi/bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 101% 100%;
     background-position: center;
 }
 .content-detail{
@@ -100,19 +100,23 @@ html, body{
     margin-left: 88px;
 }
 
-
-.dislpayArrow a {
+.display-icon{
     background: url(../images/icon_arrow.png) no-repeat 0 0;
+    background-position-x: -21px;
+    margin-left: -2px;
 }
+/*.dislpayArrow a {*/
+    /*background: url(../images/icon_arrow.png) no-repeat 0 0;*/
+/*}*/
 
-.lf-menu, .dislpayArrow {
+.lf-menu,.dislpayArrow {
     -moz-transition: all 0.2s ease 0s;
     -webkit-transition: all 0.2s ease 0s;
     -ms-transition: all 0.2s ease 0s;
     -o-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
 }
-.dislpayArrow {
+.dislpayArrow   {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -121,7 +125,7 @@ html, body{
     height: 100%;
     z-index: 10;
 }
-.dislpayArrow a {
+.dislpayArrow a   {
     position: absolute;
     display: block;
     width: 17px;
@@ -132,6 +136,13 @@ html, body{
 }
 .big-page .dislpayArrow{
     left: 0;
+
+}
+.extend-menu{
+    background: url(../images/icon_arrow.png) no-repeat 0 0;
+    background-position-y: -62px;
+    background-position-x: -21px;
+    margin-left: -2px;
 }
 .red-css{
     color: red;
